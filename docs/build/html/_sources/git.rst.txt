@@ -90,3 +90,59 @@ Send a merge request after you have finished your task.
     request should be Assigned to your project leader. He/She will provide comments (if necessary).
     Finally, when you are done with all code corrections, and your code has been accepted and merged
     into staging branch, the ticket can be Resolved.
+
+
+Git WorkFlow
+---------------
+
+Cloning the repository
+++++++++++++++++++++++++
+You can choose to clone either via SSH or HTTPS. For instructions on how to set-up SSH, please refer to this
+`Tutorial <https://docs.gitlab.com/ee/ssh/>`_.
+::
+
+    # SSH
+    git clone git@gitlab.com...
+
+    # HTTPS
+    git clone https://gitlab.com...
+
+Check out a feature branch
+++++++++++++++++++++++++++++
+If a remote branch already exists for the feature you've been assigned to work on, check out the branch.
+::
+
+    # Check remote branches
+    git branch -r
+
+    # Checkout the remote branch
+    git checkout -b <branch name>
+
+    # Pull the remote branch to your local branch
+    git pull
+If the branch is not yet exist on the remote repository, create a new local branch.
+::
+
+    git branch <new branch name>
+
+Push your code to the repository.
++++++++++++++++++++++++++++++++++++
+At the end of each day or upon completion of your task (whichever is earlier), push your code to your feature branch.
+::
+
+    # Add all current changes to the next commit. See: https://git-scm.com/docs/git-add
+    git add .
+
+    # Add a commit message. See: https://git-scm.com/docs/git-commit
+    git commit -m <commit message>
+
+    # Push your commit to the remote repository. See: https://git-scm.com/docs/git-push
+    git push
+
+
+Remove your local branch after the code has been merged into staging.
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Upon successful merging into staging, remove your local branch.
+::
+
+    git branch -d <branch name>
