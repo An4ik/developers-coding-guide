@@ -1,0 +1,327 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>git &mdash; Developers coding guide 0.0.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Welcome to Developers coding guide’s documentation!" href="index.html" /> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Developers coding guide
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">git</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#repositories">Repositories</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#git-rules">Git Rules</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#always-pull-the-latest-code-from-master-code-at-the-start-of-each-day">Always pull the latest code from master code at the start of each day.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#perform-work-in-your-own-feature-branch-and-never-the-staging">Perform work in your own feature branch and never the staging.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#always-name-your-branches-appropriately">Always name your branches appropriately.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#make-committing-and-pushing-code-changes-to-your-branch-as-a-habit">Make committing and pushing code changes to your branch as a habit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#remove-unnecessary-code-before-pushing-to-your-feature-branch">Remove unnecessary code before pushing to your feature branch.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#whenever-possible-add-a-comment-describing-your-code-functionality">Whenever possible, add a comment describing your code functionality.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#don-t-be-afraid-to-ask-for-help-from-other-developers">Don’t be afraid to ask for help from other developers.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#delete-local-and-remote-branches-after-your-code-has-been-merged-into-the-staging-branch">Delete local and remote branches after your code has been merged into the staging branch.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#write-good-commit-messages-when-pushing-your-code-to-any-branch">Write good commit messages when pushing your code to any branch.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#send-a-merge-request-after-you-have-finished-your-task">Send a merge request after you have finished your task.</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Developers coding guide</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>git</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/git.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="git">
+<h1>git<a class="headerlink" href="#git" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="repositories">
+<h2>Repositories<a class="headerlink" href="#repositories" title="Permalink to this headline">¶</a></h2>
+<p>We use Gitlab to host our all project code.</p>
+<p>There are two repositories exist:</p>
+<blockquote>
+<div><ul class="simple">
+<li>Backend: repository containing all server-side code</li>
+<li>Frontend: repository containing the front-end code (future)</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="git-rules">
+<h2>Git Rules<a class="headerlink" href="#git-rules" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="always-pull-the-latest-code-from-master-code-at-the-start-of-each-day">
+<h3>Always pull the latest code from master code at the start of each day.<a class="headerlink" href="#always-pull-the-latest-code-from-master-code-at-the-start-of-each-day" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div>Why? Sometimes, our awesome developers make changes to the data models on the
+server-side. This can affect how models are used when called. So, at the start of
+your day, always pull in the latest code from the staging branch for each
+repository.</div></blockquote>
+</div>
+<div class="section" id="perform-work-in-your-own-feature-branch-and-never-the-staging">
+<h3>Perform work in your own feature branch and never the staging.<a class="headerlink" href="#perform-work-in-your-own-feature-branch-and-never-the-staging" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div>Why? This way, all work done in the feature branch is isolated from the staging
+branch. In addition, you can iterate your code changes without polluting the
+staging branch with potentially unstable code.</div></blockquote>
+</div>
+<div class="section" id="always-name-your-branches-appropriately">
+<h3>Always name your branches appropriately.<a class="headerlink" href="#always-name-your-branches-appropriately" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><p>Why? To make life easy for our beloved product manager, append the ticket number
+and a short description to your branch name in this format:</p>
+<blockquote>
+<div><ul class="simple">
+<li>PE-{XXXX}/{Short Issue Description}</li>
+</ul>
+<p>(PE - because project name is Project Example)</p>
+</div></blockquote>
+<p>Keep the short description to 5 words or less. If you require more than 5 words,
+drop the short description altogether.</p>
+<p>Examples:</p>
+<blockquote>
+<div><ul class="simple">
+<li>PE-17/Profile-Modal-Fix (default)</li>
+<li>PE-18(if short description exceeds 5 words)</li>
+</ul>
+</div></blockquote>
+<p>As a general note: avoid taking the easy way out of dropping the short description.
+If the description requires more than 5 words, think of a more succinct way to
+describe it. We limit the characters, just like Twitter, to force you to be more
+succinct in describing an issue.</p>
+</div></blockquote>
+</div>
+<div class="section" id="make-committing-and-pushing-code-changes-to-your-branch-as-a-habit">
+<h3>Make committing and pushing code changes to your branch as a habit<a class="headerlink" href="#make-committing-and-pushing-code-changes-to-your-branch-as-a-habit" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div>Why? To avoid any data loss as a result of your laptop facing a misfortune, we encourage
+that you keep pushing your code to your local feature branch even if is still a work in
+progress.</div></blockquote>
+</div>
+<div class="section" id="remove-unnecessary-code-before-pushing-to-your-feature-branch">
+<h3>Remove unnecessary code before pushing to your feature branch.<a class="headerlink" href="#remove-unnecessary-code-before-pushing-to-your-feature-branch" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div>Why? To make code reviews easier, remove any unnecessary lines of code. This could include
+code snippets that have been commented out and even debug functions (e.g. Javascript.console.log, pdb).</div></blockquote>
+</div>
+<div class="section" id="whenever-possible-add-a-comment-describing-your-code-functionality">
+<h3>Whenever possible, add a comment describing your code functionality.<a class="headerlink" href="#whenever-possible-add-a-comment-describing-your-code-functionality" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div>Why? While not required, writing a short paragraph describing the functionality of your code
+will be certainly helpful for the understanding of everyone involved.</div></blockquote>
+</div>
+<div class="section" id="don-t-be-afraid-to-ask-for-help-from-other-developers">
+<h3>Don’t be afraid to ask for help from other developers.<a class="headerlink" href="#don-t-be-afraid-to-ask-for-help-from-other-developers" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div>Why? The problems we try to solve can be difficult at times. Don’t be afraid to ask for help.
+But remember: before you do,  be clear in the problem you face and the solutions you have explored
+but failed. It’s also important that you push your code to your feature branch so that other
+developers can provide help.</div></blockquote>
+</div>
+<div class="section" id="delete-local-and-remote-branches-after-your-code-has-been-merged-into-the-staging-branch">
+<h3>Delete local and remote branches after your code has been merged into the staging branch.<a class="headerlink" href="#delete-local-and-remote-branches-after-your-code-has-been-merged-into-the-staging-branch" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div>Why? Simple: we want to keep our repositories clean and organized.</div></blockquote>
+</div>
+<div class="section" id="write-good-commit-messages-when-pushing-your-code-to-any-branch">
+<h3>Write good commit messages when pushing your code to any branch.<a class="headerlink" href="#write-good-commit-messages-when-pushing-your-code-to-any-branch" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div>Why? The success of the project rests (among other things) on maintaining a well-documented
+project log. When pushing code to your branch, it’s worth taking the time to write clear,
+useful and helpful commit messages. What may be a hassle at first will ensure productivity
+for everyone involved. Keep your commit messages to 50 characters or less.</div></blockquote>
+</div>
+<div class="section" id="send-a-merge-request-after-you-have-finished-your-task">
+<h3>Send a merge request after you have finished your task.<a class="headerlink" href="#send-a-merge-request-after-you-have-finished-your-task" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div>Why? This is critical so that your code can go live on the server. Go to Gitlab. Request merge
+of your branch to indonesia/staging. Put short description of changes on that branch. The merge
+request should be Assigned to your project leader. He/She will provide comments (if necessary).
+Finally, when you are done with all code corrections, and your code has been accepted and merged
+into staging branch, the ticket can be Resolved.</div></blockquote>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="index.html" class="btn btn-neutral" title="Welcome to Developers coding guide’s documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Anuar Akhmetov
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
