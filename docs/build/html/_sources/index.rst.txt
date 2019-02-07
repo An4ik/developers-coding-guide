@@ -9,7 +9,12 @@ Welcome to Developers coding guide's documentation!
 .. toctree::
    :maxdepth: 2
 
+
+   deployment
    git
+   general
+   testing
+
 
 
 
