@@ -1,21 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="229a089d-6b52-405a-8345-b9dd35ee03af" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/docs/source/deployment.rst" afterDir="false" />
+    <list default="true" id="229a089d-6b52-405a-8345-b9dd35ee03af" name="Default Changelist" comment="Merge branch 'master' into feature/local-deployment&#10;&#10;# Conflicts:&#10;#&#9;docs/build/doctrees/environment.pickle&#10;#&#9;docs/build/doctrees/git.doctree&#10;#&#9;docs/build/html/git.html&#10;#&#9;docs/build/html/searchindex.js">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/build/doctrees/deployment.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/docs/build/doctrees/deployment.doctree" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/build/doctrees/environment.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/docs/build/doctrees/environment.pickle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/build/doctrees/git.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/docs/build/doctrees/git.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/build/doctrees/index.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/docs/build/doctrees/index.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/build/html/_sources/git.rst.txt" beforeDir="false" afterPath="$PROJECT_DIR$/docs/build/html/_sources/git.rst.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/build/html/_sources/index.rst.txt" beforeDir="false" afterPath="$PROJECT_DIR$/docs/build/html/_sources/index.rst.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/build/html/genindex.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/build/html/genindex.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/build/html/git.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/build/html/git.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/build/html/_sources/deployment.rst.txt" beforeDir="false" afterPath="$PROJECT_DIR$/docs/build/html/_sources/deployment.rst.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/build/html/deployment.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/build/html/deployment.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/build/html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/build/html/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/build/html/objects.inv" beforeDir="false" afterPath="$PROJECT_DIR$/docs/build/html/objects.inv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/build/html/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/build/html/search.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/build/html/searchindex.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/build/html/searchindex.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/source/git.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/source/git.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/source/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/source/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/source/deployment.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/source/deployment.rst" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -49,16 +43,6 @@
               <second_editor />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/docs/source/git.rst">
-          <provider selected="true" editor-type-id="restructured-text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/docs/source/index.rst">
-          <provider selected="true" editor-type-id="restructured-text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
@@ -173,7 +157,7 @@
       <workItem from="1547480705774" duration="444000" />
       <workItem from="1549168550383" duration="2537000" />
       <workItem from="1549381544209" duration="2064000" />
-      <workItem from="1549558044171" duration="658000" />
+      <workItem from="1549558044171" duration="2968000" />
     </task>
     <task id="LOCAL-00001" summary="added git workflow guidance">
       <created>1547392580456</created>
@@ -182,14 +166,21 @@
       <option name="project" value="LOCAL" />
       <updated>1547392580456</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added git workflow guidance">
+      <created>1549558755610</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1549558755610</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11882000" />
+    <option name="totallyTimeSpent" value="14192000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="25" width="1920" height="1055" extended-state="6" />
+    <frame x="0" y="25" width="1920" height="1055" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
@@ -236,6 +227,12 @@
     <entry file="file://$PROJECT_DIR$/docs/source/general.rst">
       <provider selected="true" editor-type-id="restructured-text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/docs/source/index.rst">
+      <provider selected="true" editor-type-id="restructured-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/source/git.rst">
+      <provider selected="true" editor-type-id="restructured-text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -245,12 +242,6 @@
           <second_editor />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/source/index.rst">
-      <provider selected="true" editor-type-id="restructured-text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/source/git.rst">
-      <provider selected="true" editor-type-id="restructured-text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/docs/source/deployment.rst">
       <provider editor-type-id="text-editor">
