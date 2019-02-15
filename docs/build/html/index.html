@@ -28,7 +28,7 @@
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Local Deployment" href="deployment.html" /> 
+    <link rel="next" title="Local Deployment (manually)" href="deployment_local.html" /> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -78,7 +78,8 @@
             
             
               <ul>
-<li class="toctree-l1"><a class="reference internal" href="deployment.html">Local Deployment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="deployment_local.html">Local Deployment (manually)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="deployment_docker.html">Local Deployment with Docker</a></li>
 <li class="toctree-l1"><a class="reference internal" href="git.html">Git</a></li>
 <li class="toctree-l1"><a class="reference internal" href="general.html">General Principles</a></li>
 <li class="toctree-l1"><a class="reference internal" href="testing.html">Testing</a></li>
@@ -150,20 +151,39 @@
 <h1>Welcome to Developers coding guide’s documentation!<a class="headerlink" href="#welcome-to-developers-coding-guide-s-documentation" title="Permalink to this headline">¶</a></h1>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="deployment.html">Local Deployment</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="deployment.html#clone-project">Clone project</a></li>
-<li class="toctree-l2"><a class="reference internal" href="deployment.html#install-virtual-environment">Install virtual environment</a></li>
-<li class="toctree-l2"><a class="reference internal" href="deployment.html#install-dependencies">Install Dependencies</a></li>
-<li class="toctree-l2"><a class="reference internal" href="deployment.html#setup-database">Setup database</a></li>
-<li class="toctree-l2"><a class="reference internal" href="deployment.html#run-migrations">Run migrations</a></li>
-<li class="toctree-l2"><a class="reference internal" href="deployment.html#run-server">Run server</a></li>
-<li class="toctree-l2"><a class="reference internal" href="deployment.html#ensure-that-you-ve-done">Ensure that you’ve done</a></li>
+<li class="toctree-l1"><a class="reference internal" href="deployment_local.html">Local Deployment (manually)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="deployment_local.html#clone-project">Clone project</a></li>
+<li class="toctree-l2"><a class="reference internal" href="deployment_local.html#install-virtual-environment">Install virtual environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="deployment_local.html#install-dependencies">Install Dependencies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="deployment_local.html#setup-database">Setup database</a></li>
+<li class="toctree-l2"><a class="reference internal" href="deployment_local.html#run-migrations">Run migrations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="deployment_local.html#run-server">Run server</a></li>
+<li class="toctree-l2"><a class="reference internal" href="deployment_local.html#ensure-that-you-ve-done">Ensure that you’ve done</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="deployment_docker.html">Local Deployment with Docker</a></li>
 <li class="toctree-l1"><a class="reference internal" href="git.html">Git</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="git.html#repositories">Repositories</a></li>
-<li class="toctree-l2"><a class="reference internal" href="git.html#git-rules">Git Rules</a></li>
-<li class="toctree-l2"><a class="reference internal" href="git.html#git-workflow">Git WorkFlow</a></li>
+<li class="toctree-l2"><a class="reference internal" href="git.html#git-rules">Git Rules</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="git.html#always-pull-the-latest-code-from-master-code-at-the-start-of-each-day">Always pull the latest code from master code at the start of each day.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="git.html#perform-work-in-your-own-feature-branch-and-never-the-staging">Perform work in your own feature branch and never the staging.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="git.html#always-name-your-branches-appropriately">Always name your branches appropriately.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="git.html#make-committing-and-pushing-code-changes-to-your-branch-as-a-habit">Make committing and pushing code changes to your branch as a habit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="git.html#remove-unnecessary-code-before-pushing-to-your-feature-branch">Remove unnecessary code before pushing to your feature branch.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="git.html#whenever-possible-add-a-comment-describing-your-code-functionality">Whenever possible, add a comment describing your code functionality.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="git.html#don-t-be-afraid-to-ask-for-help-from-other-developers">Don’t be afraid to ask for help from other developers.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="git.html#delete-local-and-remote-branches-after-your-code-has-been-merged-into-the-staging-branch">Delete local and remote branches after your code has been merged into the staging branch.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="git.html#write-good-commit-messages-when-pushing-your-code-to-any-branch">Write good commit messages when pushing your code to any branch.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="git.html#send-a-merge-request-after-you-have-finished-your-task">Send a merge request after you have finished your task.</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="git.html#git-workflow">Git WorkFlow</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="git.html#cloning-the-repository">Cloning the repository</a></li>
+<li class="toctree-l3"><a class="reference internal" href="git.html#check-out-a-feature-branch">Check out a feature branch</a></li>
+<li class="toctree-l3"><a class="reference internal" href="git.html#push-your-code-to-the-repository">Push your code to the repository.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="git.html#remove-your-local-branch-after-the-code-has-been-merged-into-staging">Remove your local branch after the code has been merged into staging.</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="general.html">General Principles</a></li>
@@ -188,7 +208,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="deployment.html" class="btn btn-neutral float-right" title="Local Deployment" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="deployment_local.html" class="btn btn-neutral float-right" title="Local Deployment (manually)" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
     </div>

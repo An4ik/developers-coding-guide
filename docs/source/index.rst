@@ -7,10 +7,11 @@ Welcome to Developers coding guide's documentation!
 ===================================================
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 4
 
 
-   deployment
+   deployment_local
+   deployment_docker
    git
    general
    testing
