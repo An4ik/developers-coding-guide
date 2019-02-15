@@ -1,5 +1,5 @@
-Local Deployment
-^^^^^^^^^^^^^^^^^
+Local Deployment (manually)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 We have run our project on local machine. So here is an instructions how to do it.
 
 

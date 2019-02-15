@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>General Principles &mdash; Developers coding guide 0.0.1 documentation</title>
+  <title>Local Deployment with Docker &mdash; Developers coding guide 0.0.1 documentation</title>
   
 
   
@@ -28,8 +28,8 @@
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Testing" href="testing.html" />
-    <link rel="prev" title="Git" href="git.html" /> 
+    <link rel="next" title="Git" href="git.html" />
+    <link rel="prev" title="Local Deployment (manually)" href="deployment_local.html" /> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -80,8 +80,9 @@
             
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="deployment_local.html">Local Deployment (manually)</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Local Deployment with Docker</a></li>
 <li class="toctree-l1"><a class="reference internal" href="git.html">Git</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">General Principles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="general.html">General Principles</a></li>
 <li class="toctree-l1"><a class="reference internal" href="testing.html">Testing</a></li>
 </ul>
 
@@ -128,13 +129,13 @@
     
       <li><a href="index.html">Docs</a> &raquo;</li>
         
-      <li>General Principles</li>
+      <li>Local Deployment with Docker</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/general.rst.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/deployment_docker.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -147,8 +148,22 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="general-principles">
-<h1>General Principles<a class="headerlink" href="#general-principles" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="local-deployment-with-docker">
+<h1>Local Deployment with Docker<a class="headerlink" href="#local-deployment-with-docker" title="Permalink to this headline">¶</a></h1>
+<p>We have run our project by using docker. So here is an instructions how to do it.</p>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">Ensure you have installed <em>Docker</em> and <em>docker-compose</em></p>
+</div>
+<hr class="docutils" />
+<p>Once you are having docker-compose on your local machine simply use these commands:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># To building images etc.</span>
+<span class="n">sudo</span> <span class="n">docker</span><span class="o">-</span><span class="n">compose</span> <span class="o">-</span><span class="n">f</span> <span class="n">local</span><span class="o">.</span><span class="n">yml</span> <span class="n">build</span>
+
+<span class="c1"># To run it</span>
+<span class="n">sudo</span> <span class="n">docker</span><span class="o">-</span><span class="n">compose</span> <span class="o">-</span><span class="n">f</span> <span class="n">local</span><span class="o">.</span><span class="n">yml</span> <span class="n">run</span>
+</pre></div>
+</div>
 </div>
 
 
@@ -159,10 +174,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="testing.html" class="btn btn-neutral float-right" title="Testing" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="git.html" class="btn btn-neutral float-right" title="Git" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="git.html" class="btn btn-neutral" title="Git" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="deployment_local.html" class="btn btn-neutral" title="Local Deployment (manually)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
