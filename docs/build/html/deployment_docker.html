@@ -164,6 +164,16 @@
 <span class="n">sudo</span> <span class="n">docker</span><span class="o">-</span><span class="n">compose</span> <span class="o">-</span><span class="n">f</span> <span class="n">local</span><span class="o">.</span><span class="n">yml</span> <span class="n">run</span>
 </pre></div>
 </div>
+<p>You can find credentials of database in a folder <em>./envs/.local/.postgres</em>. If you want to change it rebuilding won’t help since docker has cached volumes. To do so
+just remove existed volumes and rebuild it again.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">docker</span> <span class="n">system</span> <span class="n">prune</span> <span class="o">-</span><span class="n">a</span> <span class="o">--</span><span class="n">volumes</span> <span class="o">--</span><span class="n">force</span>
+</pre></div>
+</div>
+<p>As with any shell command that we wish to run in our container, this is done using the <strong>docker-compose -f local.yml run –rm command</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ docker-compose -f local.yml run --rm django python manage.py migrate
+$ docker-compose -f local.yml run --rm django python manage.py createsuperuser
+</pre></div>
+</div>
 </div>
 
 
